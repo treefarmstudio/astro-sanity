@@ -1,6 +1,6 @@
 {
   "name": "astro-sanity",
-  "version": "0.0.15",
+  "version": "0.0.16",
   "description": "",
   "type": "module",
   "types": "./dist/index.d.ts",
@@ -16,8 +16,9 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "astro-integration",
-    "astro-component"
+    "astro",
+    "sanity",
+    "sanity.io"
   ],
   "author": "",
   "license": "ISC",

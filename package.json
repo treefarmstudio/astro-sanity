@@ -1,6 +1,6 @@
 {
   "name": "astro-sanity",
-  "version": "0.0.16",
+  "version": "0.0.17",
   "description": "",
   "type": "module",
   "types": "./dist/index.d.ts",
@@ -30,5 +30,9 @@
   },
   "devDependencies": {
     "@types/node": "^18.7.13"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/littlesticksdev/astro-sanity"
   }
 }

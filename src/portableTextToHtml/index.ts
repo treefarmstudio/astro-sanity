@@ -1,5 +1,5 @@
 import { toHTML } from '@portabletext/to-html';
 
-export function portabletextToHtml(portabletext: any, customComponents = {}) {
+export function portableTextToHtml(portabletext: any, customComponents = {}) {
   return toHTML(portabletext, { components: customComponents });
 }

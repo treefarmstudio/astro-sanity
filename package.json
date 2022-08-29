@@ -1,6 +1,6 @@
 {
   "name": "astro-sanity",
-  "version": "0.0.17",
+  "version": "0.0.1",
   "description": "",
   "type": "module",
   "types": "./dist/index.d.ts",

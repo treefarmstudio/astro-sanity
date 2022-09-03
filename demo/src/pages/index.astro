@@ -1,0 +1,41 @@
+---
+import SanityPortableText from '../components/SanityPortableText.astro';
+import { urlForImage } from '../sanity/urlForImage';
+import {getFirstBlogPost} from '../sanity/api'
+
+const data = await getFirstBlogPost();
+---
+
+<style is:global>
+  html {
+    font-family: sans-serif;
+  }
+    .responsive__img {
+        width: 100%;
+        height: auto;
+      }
+      .wrapper {
+        max-width: 600px;
+        margin: 0 auto; 
+      }
+</style>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Astro</title>
+	</head>
+	<body>
+    <div class="wrapper">
+      <h1>{data.title}</h1>
+      <picture>
+        <source srcset={urlForImage(data.mainImage).width(600).format('webp').url()} type="image/webp">
+        <img src={urlForImage(data.mainImage).width(600).url()} />
+      </picture>
+      <SanityPortableText portableText={data.body} />
+    </div>
+	</body>
+</html>

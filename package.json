@@ -1,6 +1,6 @@
 {
   "name": "astro-sanity",
-  "version": "0.0.24",
+  "version": "0.0.26",
   "description": "",
   "license": "MIT",
   "type": "module",
@@ -22,7 +22,8 @@
   "keywords": [
     "astro",
     "sanity",
-    "sanity.io"
+    "sanity.io",
+    "astro-integration"
   ],
   "author": "",
   "dependencies": {

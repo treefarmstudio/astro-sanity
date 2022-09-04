@@ -1,4 +1,5 @@
 import sanityClient, { ClientConfig } from '@sanity/client';
+import { AstroIntegration } from 'astro';
 
 export { createImageBuilder } from './createImageBuilder';
 
@@ -18,7 +19,7 @@ export function useSanityClient() {
   return globalThis.sanityClient;
 }
 
-export default function astroSanityIntegration(options: ClientConfig) {
+export default function astroSanityIntegration(options: ClientConfig): AstroIntegration {
   return {
     name: 'astro-sanity',
     hooks: {

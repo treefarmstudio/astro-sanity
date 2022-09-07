@@ -11,6 +11,6 @@
   },
   "devDependencies": {
     "astro": "^1.1.5",
-    "astro-sanity": "^0.0.26"
+    "astro-sanity": "workspace:^0.0.26"
   }
 }

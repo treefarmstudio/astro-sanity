@@ -11,6 +11,9 @@
   },
   "devDependencies": {
     "astro": "^1.1.5",
-    "astro-sanity": "workspace:^0.0.26"
+    "astro-sanity": "^0.0.27"
+  },
+  "dependencies": {
+    "@astrojs/image": "^0.7.0"
   }
 }

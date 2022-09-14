@@ -1,6 +1,6 @@
 {
   "name": "astro-sanity",
-  "version": "0.0.27",
+  "version": "0.0.28",
   "description": "",
   "license": "MIT",
   "type": "module",
@@ -17,7 +17,8 @@
   "scripts": {
     "build": "tsc",
     "clean": "rm -rf dist",
-    "prepublishOnly": "pnpm run clean && pnpm run build",
+    "prebuild": "npm run clean",
+    "prepublishOnly": "npm run clean && npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [

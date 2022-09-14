@@ -10,8 +10,8 @@
     "astro": "astro"
   },
   "devDependencies": {
-    "astro": "^1.1.5",
-    "astro-sanity": "^0.0.27"
+    "astro": "^1.2.4",
+    "astro-sanity": "^0.0.28"
   },
   "dependencies": {
     "@astrojs/image": "^0.7.0"

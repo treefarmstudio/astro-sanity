@@ -1,6 +1,6 @@
 {
   "name": "astro-sanity",
-  "version": "0.0.29+1",
+  "version": "0.0.30",
   "description": "",
   "license": "MIT",
   "type": "module",
@@ -25,14 +25,15 @@
     "astro",
     "sanity",
     "sanity.io",
-    "astro-integration"
+    "astro-integration",
+    "astro-component"
   ],
   "author": "",
   "dependencies": {
     "@portabletext/to-html": "^1.0.3",
     "@sanity/client": "^3.3.5",
     "@sanity/image-url": "^1.0.1",
-    "astro": "^1.1.1"
+    "astro": "^1.2.4"
   },
   "devDependencies": {
     "@types/node": "^18.7.13",

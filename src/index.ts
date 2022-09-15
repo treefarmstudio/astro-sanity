@@ -1,9 +1,8 @@
 import sanityClient, { ClientConfig } from '@sanity/client';
 import { AstroIntegration } from 'astro';
 
-export { createImageBuilder } from './createImageBuilder';
-
-export { portableTextToHtml } from './portableTextToHtml';
+export { createImageBuilder } from './createImageBuilder/index.js';
+export { portableTextToHtml } from './portableTextToHtml/index.js';
 
 function initSanityClient(config: ClientConfig) {
   const client = sanityClient(config);

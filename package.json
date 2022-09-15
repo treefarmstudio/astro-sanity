@@ -1,7 +1,7 @@
 {
   "name": "astro-sanity",
-  "version": "0.0.30",
-  "description": "",
+  "version": "1.0.0",
+  "description": "A helper package to integrate Astro and Sanity",
   "license": "MIT",
   "type": "module",
   "types": "./dist/index.d.ts",
@@ -28,7 +28,7 @@
     "astro-integration",
     "astro-component"
   ],
-  "author": "",
+  "author": "Jaydan Urwin",
   "dependencies": {
     "@portabletext/to-html": "^1.0.3",
     "@sanity/client": "^3.3.5",

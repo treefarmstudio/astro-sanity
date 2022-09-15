@@ -1,5 +1,5 @@
 ---
-import SanityPortableText from '../components/SanityPortableText.astro';
+import PortableText from '../components/PortableText.astro';
 import { urlForImage } from '../sanity/urlForImage';
 import { getFirstBlogPost } from '../sanity/api';
 
@@ -36,6 +36,6 @@ const data = await getFirstBlogPost();
       />
       <img src={urlForImage(data.mainImage).width(600).url()} />
     </picture>
-    <SanityPortableText portableText={data.body} />
+    <PortableText portableText={data.body} />
   </div>
 </body>

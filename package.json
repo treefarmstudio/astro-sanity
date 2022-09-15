@@ -1,6 +1,6 @@
 {
   "name": "astro-sanity",
-  "version": "0.0.29",
+  "version": "0.0.29+1",
   "description": "",
   "license": "MIT",
   "type": "module",
@@ -40,6 +40,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/littlesticksdev/astro-sanity"
+    "url": "https://github.com/littlesticks/astro-sanity"
   }
 }

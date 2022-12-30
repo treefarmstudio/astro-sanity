@@ -5,11 +5,13 @@ export { createImageBuilder } from "./createImageBuilder/index.js";
 export { portableTextToHtml } from "./portableTextToHtml/index.js";
 export { groq } from "./groq/index.js";
 
-function initSanityClient(config: ClientConfig) {
-  const client = sanityClient(config);
+import { vitePluginSanityInit } from "./vite-plugin-sanity-init.js";
 
-  globalThis.sanityClient = client;
-}
+// function initSanityClient(config: ClientConfig) {
+//   const client = sanityClient(config);
+
+//   globalThis.sanityClient = client;
+// }
 
 export function useSanityClient() {
   if (!globalThis.sanityClient) {
@@ -28,11 +30,19 @@ export default function astroSanityIntegration(
       "astro:config:setup": ({ injectScript, updateConfig }) => {
         updateConfig({
           vite: {
-            plugins: [],
+            plugins: [
+              vitePluginSanityInit(options),
+            ],
           },
         });
+        injectScript(
+          'page-ssr',
+          `
+          import { sanityClient } from "virtual:sanity-init";
+          globalThis.sanityClient = sanityClient;
+          `
+        );
 
-        initSanityClient(options);
       },
     },
   };

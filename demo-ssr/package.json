@@ -1,5 +1,5 @@
 {
-  "name": "astro-sanity-demo",
+  "name": "astro-sanity-demo-ssr",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -10,8 +10,9 @@
     "astro": "astro"
   },
   "devDependencies": {
-    "astro": "^1.2.4",
-    "astro-sanity": "^1.0.0"
+    "astro": "^1.7.2",
+    "astro-sanity": "^1.0.0",
+    "@astrojs/vercel": "^2.4.0"
   },
   "dependencies": {
     "@astrojs/image": "^0.7.0",

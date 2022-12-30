@@ -1,6 +1,6 @@
 {
   "name": "astro-sanity",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "A helper package to integrate Astro and Sanity",
   "license": "MIT",
   "globals": {

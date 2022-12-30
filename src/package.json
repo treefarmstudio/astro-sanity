@@ -1,6 +1,6 @@
 {
   "name": "astro-sanity",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "A helper package to integrate Astro and Sanity",
   "license": "MIT",
   "type": "module",
@@ -24,7 +24,7 @@
     "build": "vite build",
     "clean": "rm -rf dist",
     "prebuild": "npm run clean",
-    "prepublishOnly": "npm run clean && npm run build",
+    "prepublishOnly": "npm run clean && npm run build && cp ../README.md ./",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [

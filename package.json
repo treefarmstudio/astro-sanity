@@ -8,11 +8,13 @@
   },
   "workspaces": [
     "./src",
-    "./demo"
+    "./demo",
+    "./demo-ssr"
   ],
   "scripts": {
     "dev": "npm run dev --workspace=src",
     "demo": "npm run dev --workspace=demo",
+    "demo-ssr": "npm run dev --workspace=demo-ssr",
     "build": "npm run build --workspace=src",
     "clean": "npm run clean --workspace=src",
     "prebuild": "npm run clean --workspace=src",

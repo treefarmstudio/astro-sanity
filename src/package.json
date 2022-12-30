@@ -4,10 +4,14 @@
   "description": "A helper package to integrate Astro and Sanity",
   "license": "MIT",
   "type": "module",
-  "main": "./dist/index.js",
+  "main": "./dist/astro-sanity.js",
+  "module": "./dist/astro-sanity.mjs",
   "types": "./dist/index.d.ts",
   "exports": {
-    ".": "./dist/index.js"
+    ".": {
+      "import": "./dist/astro-sanity.mjs",
+      "require": "./dist/astro-sanity.js"
+    }
   },
   "files": [
     "dist"
@@ -16,8 +20,8 @@
     "globalThis": true
   },
   "scripts": {
-    "dev": "tsc -w",
-    "build": "tsc",
+    "dev": "vite build --watch",
+    "build": "vite build",
     "clean": "rm -rf dist",
     "prebuild": "npm run clean",
     "prepublishOnly": "npm run clean && npm run build",

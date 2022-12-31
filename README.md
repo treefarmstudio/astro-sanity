@@ -51,10 +51,10 @@ import { useSanityClient } from 'astro-sanity';
 Here is an example using the client to query Sanity:
 
 ```js
-import { useSanityClient } from 'astro-sanity';
+import { useSanityClient, groq } from 'astro-sanity';
 
 export async function getFirstBlogPost() {
-  const query = `*[_type == "post"]`;
+  const query = groq`*[_type == "post"]`;
   const firstPost = await useSanityClient().fetch(query);
   return firstPost;
 }

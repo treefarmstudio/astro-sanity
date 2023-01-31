@@ -10,12 +10,8 @@
     "astro": "astro"
   },
   "devDependencies": {
-    "astro": "^1.7.2",
-    "astro-sanity": "^1.1.1",
-    "@astrojs/vercel": "^2.4.0"
-  },
-  "dependencies": {
-    "@astrojs/image": "^0.7.0",
-    "groq": "^2.33.2"
+    "@astrojs/vercel": "^2.4.0",
+    "astro": "^2.0.4",
+    "astro-sanity": "^1.1.2"
   }
 }

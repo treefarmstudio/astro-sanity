@@ -11,6 +11,6 @@
   },
   "devDependencies": {
     "astro": "^2.0.4",
-    "astro-sanity": "^1.1.2"
+    "astro-sanity": "^1.1.3"
   }
 }

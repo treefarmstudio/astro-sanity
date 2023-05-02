@@ -1,4 +1,4 @@
-import { ClientConfig } from "@sanity/client";
+import { ClientConfig, SanityClient } from "@sanity/client";
 import { AstroIntegration } from "astro";
 
 export { createImageBuilder } from "./createImageBuilder/index.js";
@@ -13,7 +13,7 @@ export function useSanityClient() {
     console.error("Sanity client has not been initialized correctly");
   }
 
-  return globalThis.sanityClient;
+  return globalThis.sanityClient as SanityClient;
 }
 
 export default function astroSanityIntegration(

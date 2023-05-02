@@ -10,11 +10,7 @@
     "astro": "astro"
   },
   "devDependencies": {
-    "astro": "^1.2.4",
-    "astro-sanity": "^1.1.1"
-  },
-  "dependencies": {
-    "@astrojs/image": "^0.7.0",
-    "groq": "^2.33.2"
+    "astro": "^2.0.4",
+    "astro-sanity": "^1.1.3"
   }
 }

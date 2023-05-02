@@ -1,6 +1,6 @@
 {
   "name": "astro-sanity",
-  "version": "1.1.1",
+  "version": "1.1.6",
   "description": "A helper package to integrate Astro and Sanity",
   "license": "MIT",
   "globals": {
@@ -16,6 +16,8 @@
     "demo": "npm run dev --workspace=demo",
     "demo-ssr": "npm run dev --workspace=demo-ssr",
     "build": "npm run build --workspace=src",
+    "build-demo": "npm run build --workspace=demo",
+    "build-ssr": "npm run build --workspace=demo-ssr",
     "clean": "npm run clean --workspace=src",
     "prebuild": "npm run clean --workspace=src",
     "prepublishOnly": "npm run build --workspace=src",

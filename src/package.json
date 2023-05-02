@@ -1,6 +1,6 @@
 {
   "name": "astro-sanity",
-  "version": "1.1.5",
+  "version": "1.1.6",
   "description": "A helper package to integrate Astro and Sanity",
   "license": "MIT",
   "type": "module",
@@ -37,9 +37,9 @@
   "author": "Jaydan Urwin",
   "dependencies": {
     "@portabletext/to-html": "^1.0.3",
-    "@sanity/client": "^3.3.5",
-    "@sanity/image-url": "^1.0.1",
-    "astro": "^1.2.4",
+    "@sanity/client": "^5.4.2",
+    "@sanity/image-url": "^1.0.2",
+    "astro": "^2.3.3",
     "groq": "^2.33.2"
   },
   "devDependencies": {

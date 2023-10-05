@@ -14,8 +14,8 @@ export function vitePluginSanityInit(config: ClientConfig) {
     async load(id: string) {
       if (id === resolvedVirtualModuleId) {
         return `
-          import client from "@sanity/client";
-          export const sanityClient = client(${JSON.stringify(config)});
+          import {createClient} from "@sanity/client";
+          export const sanityClient = createClient(${JSON.stringify(config)});
         `;
       }
     },

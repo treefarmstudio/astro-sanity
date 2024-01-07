@@ -1,4 +1,10 @@
-# Astro + Sanity Integration
+# ⚠️ Astro + Sanity Integration
+
+This plugin has been deprecated. Please refer to [the official Sanity + Astro Plugin](https://www.sanity.io/plugins/sanity-astro) going forward.
+
+---
+
+## 
 
 This is a helper package for integrating [Sanity](https://www.sanity.io/) with [Astro](https://astro.build/). It is not officially from Sanity but it is architected in the same way their official packages for frameworks like NextJS are.
 
